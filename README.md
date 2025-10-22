@@ -1,1 +1,1 @@
-Responsive:  max-wdth: 1023px; max-wdth: 768px
+Responsive:  max-width: 1023px; max-width: 768px
