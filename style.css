@@ -11,7 +11,64 @@ body {
 }
 
 
+@media all and (max-width: 1023px) {
+    #form {
+        grid-template-columns: 1fr !important;
+    }
+    #bouton {
+        grid-column: span 1 !important;
+    }
+    #radio {        
+        justify-content: space-around;
+    }
+    #prepa {
+        min-height: 100px;
+    }
+    #ingredients {
+        grid-row: 4;
+    }
+    #photo {
+        grid-row: 3;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #f5f5f5;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+    }    
+
+    #menu-checkbox:checked + .menu-toggle + .nav-links {
+        display: flex;
+    }
+
+    body.dark-mode .nav-links {
+        background: #2a2a2a;
+    }
+
+    #affiche {
+        width: 80% !important;
+        left: 10% !important;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    footer {        
+        flex-direction: column;
+        gap: 40px;
+    }
+    #affiche {
+        width: 95% !important;
+        left: 2.5% !important;
+    }
+}
+
 /* ---------- MODE SOMBRE ---------- */
+
 body.dark-mode {
     background-color: #1e1e1e;
     color: #f5f5f5;
@@ -55,6 +112,13 @@ body.dark-mode .card {
 
 body.dark-mode footer {
     background-color: #1e1e1e;
+    color: #ddd;
+}
+
+body.dark-mode .footer-column a{
+    color: #ddd;
+}
+body.dark-mode .copyright{
     color: #ddd;
 }
 
@@ -116,6 +180,23 @@ nav a.page, nav a:hover {
 }
 
 
+.menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+.menu-toggle span {
+    background: #e67e22;
+    height: 3px;
+    width: 25px;
+}
+#menu-checkbox {
+    display: none;
+}
+
+
 /* --------- Main ------------- */
 
 #divForm {
@@ -158,6 +239,7 @@ nav a.page, nav a:hover {
 #bouton {
     background-color: #e67e22;
     border: 1px solid #e67e22;
+    color: white;
     border-radius: 10px;
     width: 100px;
     height: 30px;
@@ -244,10 +326,10 @@ nav a.page, nav a:hover {
 #affiche {
     background-color: rgb(202, 174, 174);
     border: 2px solid orange;
-    width: 50%;
+    width: 70%;
     position: fixed;
     top: 15%;
-    left: 25%;
+    left: 15%;
 }
 
 #teteAff {
@@ -270,7 +352,9 @@ nav a.page, nav a:hover {
 }
 
 #boutonAffiche {
-    border: 1px solid orange;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: white;
     border-radius: 5px;
     width: 40px;
     padding: 5px;
