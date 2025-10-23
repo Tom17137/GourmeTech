@@ -5,6 +5,41 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+
+@media all and (max-width: 1023px) {
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #f5f5f5;
+    padding: 10px;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+    }    
+
+    #menu-checkbox:checked + .menu-toggle + .nav-links {
+        display: flex;
+    }
+
+    body.dark-mode .nav-links {
+        background: #2a2a2a;
+    }
+}
+
+@media all and (max-width: 768px) {
+footer {        
+    flex-direction: column;
+    gap: 40px;
+}
+.filters {
+    /* gap: 20px !important;     */
+    flex-wrap: wrap;   
+}
+}
+
+
+
 body {
     background-color: #ffffff;
     color: #333;
@@ -54,6 +89,22 @@ nav a.page, nav a:hover {
 .night-mode {
     font-size: 35px;
     cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+    background: #e67e22;
+    height: 3px;
+    width: 25px;
+}
+#menu-checkbox {
+    display: none;
 }
 
 /* ---------- recherche et filtre ---------- */
