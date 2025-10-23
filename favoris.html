@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.vectorstock.com/i/1000v/35/31/letter-g-sign-design-template-element-orange-icon-vector-13393531.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span class="icon">G</span>
+            <span class="name">GourmeTech</span>
+        </div>
+
+            <input type="checkbox" id="menu-checkbox">  
+        <label for="menu-checkbox" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+
+        <nav class="nav-links">
+            <a href="index.html" class="page">Accueil</a>
+            <a href="#">Ajouter une recette</a>
+            <a href="#">Mes favoris</a>
+            <a href="Page-A-Propos/propos.html">À propos</a>
+        </nav>
+        <div class="night-mode">🌙</div>
+    </header>
+
+         <section class="cartes" id="ajoutRec">
+    <template id="template">
+        <div class="card">
+            <img class="image" src="" alt="">
+            <div class="card-content">
+                <h3></h3>
+                <div class="tags">
+                    <span class="tag orange"></span>
+                    <span class="tag green"></span>
+                    <span class="tag blue"></span>
+                </div>
+                <button class="voir">Voir la recette</button>
+            </div>
+        </div>
+    </template>
+</section>
+
+        <section id="affiche">
+            <template id="templateAffichage">
+                <div id="teteAff">
+                    <div id="bloc">
+                        <h3 class="h3"></h3>
+                        <div class="tags">
+                            <span class="tag orange"></span>
+                            <span class="tag green"></span>
+                            <span class="tag blue"></span>
+                        </div>        
+                    </div>        
+                    <img class="image" src="" alt="">
+                </div>
+                <div id="footAff">
+                    <p class="tIngredients"></p>
+                    <p class="tPrepa"></p>
+                </div>
+                <button class="boutonAffiche">ok</button>
+            </template>
+        </section>
+        
+    
+
+    <footer>
+        <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Ajouter une recette</a></li>
+                <li><a href="#">Mes favoris</a></li>
+                <li><a href="#">À propos</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>À propos de GourmeTech</h4>
+            <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d’un projet pédagogique.</p>
+        </div>
+
+        <div class="copyright">
+            © 2025 GourmeTech - Tous droits réservés
+        </div>
+    </footer>
+    <script src="main.js"> </script>
+</body>
+</html>
