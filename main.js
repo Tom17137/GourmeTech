@@ -20,23 +20,3 @@ document.addEventListener("DOMContentLoaded", () => {
         toggle.textContent = "☀️";
     }
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Sélectionner tous les boutons favoris
-  const favButtons = document.querySelectorAll(".fav-btn");
-
-  favButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      // Inverse l'état du favori
-      btn.classList.toggle("active");
-
-      // Change le symbole du cœur
-      if (btn.classList.contains("active")) {
-        btn.textContent = "❤️"; // cœur plein
-      } else {
-        btn.textContent = "♡"; // cœur vide
-      }
-    });
-  });
-});
-
