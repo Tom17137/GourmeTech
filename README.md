@@ -74,6 +74,25 @@ adapter le html:
         }
     }
 
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+        background: #e67e22;
+        height: 3px;
+        width: 25px;
+    }
+    #menu-checkbox {
+        display: none;
+    }
+
+    
+
     Pour le footer
     le css:
 
