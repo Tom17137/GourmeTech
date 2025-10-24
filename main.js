@@ -20,3 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
         toggle.textContent = "☀️";
     }
 });
+
+let boutEnvoie = document.querySelector(".submit-btn")
+  boutEnvoie.addEventListener("click", function(event) {
+    event.preventDefault();
+  }) 
