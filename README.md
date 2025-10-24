@@ -23,6 +23,43 @@ Pour le tableau fictif de la page favoris. Poue aider au codage car le localStor
     }
 ]
 
+Recette API pour tableau fictif:
+
+{
+    "title": "Chocolate Apple Cake",
+    "category": "dessert",
+    "time": 45,
+    "difficult": "Standard",
+    "ingredie": [
+        "185 gr butter",
+        "185 gr good quality dark chocolate",
+        "1 1/2 cups sugar",
+        "1 vanilla pod, seeds only",
+        "1 cup flour",
+        "2/3 cup selfraising flour",
+        "1/2 cup almond flour",
+        "2 pieces apples, small chunks",
+        "tablespoon optional; cinnamon, approx. ½",
+        "3 eggs"
+    ],
+    "prepara": [
+        "Preheat the oven to 180 C",
+        "Put the butter and chocolate in a double boiler and over low heat let them melt slowly together. Once melted take of the heat and let it cool slightly.",
+        "In a large bowl put the sugar, seeds of the vanilla pod and the eggs together and whisk until you have a light creamy mass.",
+        "Add the flour, selfraising flour and almond flour and combine until it becomes an even mass.",
+        "Add the melted chocolate/butter mix and stir until everything is completely combined.",
+        "If you want you can sprinkle the apple chunks with cinnamon prior to adding them to the batter.",
+        "Add the apple into the batter and mix well.",
+        "Line a baking tin with baking paper",
+        "Put the batter into the tin up to roughly 3/",
+        "It's heavy batter so will not rise a lot.",
+        "Bake for about 35 minutes or until the top of the cake feels firm to the touch.",
+        "You can check with a wooden pin but keep in mind that it needs to be moist inside!"
+    ],
+    "pic": "https://img.spoonacular.com/recipes/638820-556x370.jpg"
+}
+
+
 
 
 
