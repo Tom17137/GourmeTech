@@ -286,10 +286,15 @@ body.dark-mode .copyright{
 #affiche {
     background-color: rgb(202, 174, 174);
     border: 2px solid orange;
-    width: 70%;
+    width: 50%;
     position: fixed;
     top: 15%;
-    left: 15%;
+    left: 25%;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #teteAff {
@@ -303,6 +308,12 @@ body.dark-mode .copyright{
     justify-content: space-evenly;
     gap: 40px;
     margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.tPrepa{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -357,3 +368,25 @@ body.dark-mode .copyright{
         margin-top: 20px;
     }
     }
+
+    /* ---------- BOUTON DEL ---------- */
+.del-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.del-btn:hover {
+  background: #ffcccc;
+  transform: scale(1.1);
+}
+
