@@ -43,6 +43,7 @@ function render() {
             // Mettre à jour localStorage
             localStorage.setItem("favoris", JSON.stringify(newRec));
             // Re-render uniquement avec les cartes restantes
+            ajoutRec.innerHTML = "";
             render();
         });
 
