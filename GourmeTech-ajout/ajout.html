@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une recette</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="icon">G</span>
+            <span class="name">GourmeTech</span>
+        </div>
+        
+
+        <input type="checkbox" id="menu-checkbox">  
+        <label for="menu-checkbox" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+
+        <nav class="nav-links">
+            <a href="../index.html" class="page">Accueil</a>
+            <a href="./ajout.html">Ajouter une recette</a>
+            <a href="../GourmeTech-favoris/favoris.html">Mes favoris</a>
+            <a href="../GourmeTech-info/propos.html">À propos</a>
+        </nav>        
+        <div class="night-mode">🌙</div>
+
+    </header>
+
+    <main>
+        <div id="divForm">
+            <form id="form">
+                <input id="titre" class="input" type="text" placeholder="Titre de la recette:" required>
+                <input id="ingredients" class="input" type="text" placeholder="Liste des ingrédients séparés par un ;">
+                <div id="radio">
+                    <div id="categorie" class="coche">
+                        <h4>Catégorie</h4><br>
+                        <label><input type="radio" name="Catégorie" value="Entrée"> Entrée</label><br>
+                        <label><input type="radio" name="Catégorie" value="Plat"> Plat</label><br>
+                        <label><input type="radio" name="Catégorie" value="Dessert"> Dessert</label>
+                    </div>
+                    <div id="temps" class="coche">
+                        <h4>Temps de préparation</h4><br>
+                        <label><input type="radio" name="Temps" value="Rapide"> Rapide ( -30 min)</label><br>
+                        <label><input type="radio" name="Temps" value="Moyen"> Moyen (30–60 min)</label><br>
+                        <label><input type="radio" name="Temps" value="Long"> Long ( +60 min)</label>
+                    </div>
+                    <div id="difficulte" class="coche">
+                        <h4>Difficulté</h4><br>
+                        <label><input type="radio" name="Difficulté" value="Facile"> Facile</label><br>
+                        <label><input type="radio" name="Difficulté" value="Moyen"> Moyen</label><br>
+                        <label><input type="radio" name="Difficulté" value="Difficile"> Difficile</label>
+                    </div>
+                </div>
+
+                <textarea id="prepa" class="input" type="text" placeholder="Préparation:"></textarea>
+                <input id="photo" class="input" type="text" placeholder="URL de la photo:">
+
+                <button id="bouton" type="submit">Ajouter</button>
+            </form>
+        </div>
+
+        <section class="cartes">
+            <div id="ajoutRec" class="card">
+                <template id="template">
+                    <img class="image" src="" alt="">
+                    <div class="card-content">
+                        <h3></h3>
+                        <div class="tags">
+                            <span class="tag orange"></span>
+                            <span class="tag green"></span>
+                            <span class="tag blue"></span>
+                        </div>
+                        <button id="voir">Voir la recette</button>
+                    </div>            
+                </template>
+            </div>
+        </section>
+
+        <section id="affiche">
+            <template id ="templateAffichage">
+                <div id="teteAff">
+                    <div id="bloc">
+                        <h3 id="h3"></h3>
+                        <div class="tags">
+                            <span class="tag orange"></span>
+                            <span class="tag green"></span>
+                            <span class="tag blue"></span>
+                        </div>        
+                    </div>        
+                    <img class="image" src="" alt="">
+                </div>
+                <div id="footAff">
+                    <p id="tIngredients"></p>
+                    <p id="tPrepa"></p>
+                </div>
+                <button id="boutonAffiche">ok</button>
+            </template>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Ajouter une recette</a></li>
+                <li><a href="#">Mes favoris</a></li>
+                <li><a href="#">À propos</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>À propos de GourmeTech</h4>
+            <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d’un projet pédagogique.</p>
+        </div>
+        <div class="copyright">
+            © 2025 GourmeTech - Tous droits réservés
+        </div>
+    </footer>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
