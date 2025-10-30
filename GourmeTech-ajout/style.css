@@ -326,10 +326,15 @@ nav a.page, nav a:hover {
 #affiche {
     background-color: rgb(202, 174, 174);
     border: 2px solid orange;
-    width: 70%;
+    width: 50%;
     position: fixed;
     top: 15%;
-    left: 15%;
+    left: 25%;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #teteAff {
@@ -343,6 +348,12 @@ nav a.page, nav a:hover {
     justify-content: space-evenly;
     gap: 40px;
     margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.tPrepa{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 

@@ -132,7 +132,15 @@ function afficher () {
     let affIngr = affClone.querySelector("#tIngredients");
     affIngr.value = affDer.ingredie; 
     affIngr.contentEditable = true
-    let motIngr = affIngr.value.split(";").map(mot => mot.trim()).filter(mot => mot !== "");
+    
+    let motIngr
+    if (Array.isArray(affDer.ingredie)) {
+        motIngr = affDer.ingredie;
+    } else if (typeof affDer.ingredie === "string") {
+        motIngr = affDer.ingredie.split(";").map(m => m.trim()).filter(m => m !== "");
+    } else {
+        motIngr = [];
+    }
     
     let ul = document.createElement("ul");
 
@@ -140,8 +148,9 @@ function afficher () {
         let li = document.createElement("li");
         li.textContent = mot;        
         ul.appendChild(li);
-        affIngr.appendChild(ul);
     });
+    
+        affIngr.appendChild(ul);
 
     let affClonePrepa = affClone.querySelector("#tPrepa");
     affClonePrepa.textContent = affDer.prepara;
